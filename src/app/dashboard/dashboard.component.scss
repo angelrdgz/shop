@@ -1,0 +1,45 @@
+mat-card{
+  background: #fff;
+  .gradiant-box{
+      padding: 15px 5px;
+      background: #5C258D;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #74015d, #411e73);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #74015d, #411e73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      div[class*="col-"]{
+        border-left: 1px solid #ccc;
+
+        &:first-child{
+          border: 0 !important
+        }
+        p{
+          line-height: 1.8em;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          i{
+            margin-right: 7px;
+          }
+          .outline-indicator{
+            padding: 4px 7px;
+            border-radius: 22px;
+            font-size: .9em;
+            display: block;
+            width: 100%;
+          }
+          .green-indicator{
+            border: 1px solid #00bf67;
+            color: #00bf67;
+          }
+          .red-indicator{
+            border: 1px solid #ff4862;
+            color: #ff4862;
+          }
+        }
+        h2{
+          color: #fff;
+        }
+      }
+    }
+}

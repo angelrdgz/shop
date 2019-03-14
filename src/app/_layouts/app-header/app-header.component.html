@@ -1,3 +1,30 @@
-<p>
-  app-header works!
-</p>
+<!--<header>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voicemail</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+</header>-->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <span>Diana's Shop</span>
+    <span class="spacer"></span>
+    <mat-icon class="icon">favorite</mat-icon>
+    <mat-icon class="icon">delete</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>

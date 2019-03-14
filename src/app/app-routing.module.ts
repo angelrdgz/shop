@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppLayoutComponent } from './_layouts/app-layout/app-layout.component';
+import { SiteLayoutComponent } from './_layouts/site-layout/site-layout.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SiteLayoutComponent } from './_layouts/site-layout/site-layout.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
           { path: 'profile', component: ProfileComponent }
         ]
   },
+  { path:"login", component:LoginComponent},
   { path: '**', redirectTo: '' }
 ];
 
