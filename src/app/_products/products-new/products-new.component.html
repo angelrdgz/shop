@@ -1,0 +1,27 @@
+<mat-card>
+  <h2>New Product</h2>
+  <br>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+    <div fxFlex="25%">
+      <mat-form-field>
+        <input matInput placeholder="Name">
+      </mat-form-field>
+    </div>
+    <div fxFlex="25%">
+      <mat-form-field>
+        <input matInput (keydown)="checkNumber($event)" placeholder="Price">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="example-container">
+
+  <mat-form-field>
+    <textarea matInput placeholder="Description"></textarea>
+  </mat-form-field>
+
+</div>
+  <a routerLink="/products" mat-raised-button>
+    <mat-icon>arrow_back</mat-icon>
+    Back
+  </a>
+</mat-card>

@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { ProductsIndexComponent } from './_products/products-index/products-index.component';
+import { ProductsNewComponent } from './_products/products-new/products-new.component';
+
 const routes: Routes = [
   {
         path: '',
@@ -21,7 +24,9 @@ const routes: Routes = [
         component: AppLayoutComponent,
         children: [
           { path: 'dashboard', component: DashboardComponent },
-          { path: 'profile', component: ProfileComponent }
+          { path: 'profile', component: ProfileComponent },
+          { path: 'products', component: ProductsIndexComponent},
+          { path: 'products/new', component: ProductsNewComponent}
         ]
   },
   { path:"login", component:LoginComponent},

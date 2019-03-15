@@ -28,8 +28,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 
 import { HighchartsChartModule } from 'highcharts-angular';
+import { ProductsIndexComponent } from './_products/products-index/products-index.component';
+import { ProductsNewComponent } from './_products/products-new/products-new.component';
+import { ProductsEditComponent } from './_products/products-edit/products-edit.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,10 @@ import { HighchartsChartModule } from 'highcharts-angular';
     DashboardComponent,
     ProfileComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductsIndexComponent,
+    ProductsNewComponent,
+    ProductsEditComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +69,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MatInputModule,
     MatDividerModule,
     MatButtonModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
