@@ -4,19 +4,69 @@
        fxLayoutGap="10px"
        fxLayoutAlign.xs="center center"
        fxLayoutWrap>
-    <div class="sample-div gradiant-box" fxFlex="25%" fxFlexOrder.lt-md="7">
-      <p class="text-center">
-       <i class="material-icons">person</i>
-        <span>New Users</span>
-      </p>
-      <h2 class="text-center">54,000</h2>
-      <p class="text-center">
-        <span class="outline-indicator green-indicator">2.7% Increase</span>
-      </p>
+    <div class="sample-div gradiant-box" fxFlex="25%" fxFlexOrder.lt-md="1">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+        <div fxFlex="30%" class="text-center">
+          <i class="material-icons" style="font-size: 4.5em;">person</i>
+        </div>
+        <div fxFlex="70%" >
+          <h4 class="text-center">New Clients</h4>
+          <h2 class="text-center">54,000</h2>
+          <p class="text-center">
+            <span class="outline-indicator text-muted">2.7% Increase</span>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="sample-div" fxFlex="25%" fxFlexOrder.lt-md="6">Div 2</div>
-    <div class="sample-div" fxFlex="25%" fxFlexOrder.lt-md="5">Div 3</div>
-    <div class="sample-div" fxFlex="25%" fxFlexOrder.lt-md="4">Div 4</div>
+    <div class="sample-div gradiant-box" fxFlex="25%" fxFlexOrder.lt-md="2">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+        <div fxFlex="30%" class="text-center">
+          <i class="material-icons" style="font-size: 4.5em;">start</i>
+        </div>
+        <div fxFlex="70%" >
+          <h4 class="text-center">Sales</h4>
+          <h2 class="text-center">54,000</h2>
+          <p class="text-center">
+            <span class="outline-indicator text-muted">2.7% Increase</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sample-div gradiant-box" fxFlex="25%" fxFlexOrder.lt-md="3">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+        <div fxFlex="30%" class="text-center">
+          <i class="material-icons" style="font-size: 4.5em;">shopping_cart</i>
+        </div>
+        <div fxFlex="70%" >
+          <h4 class="text-center"></h4>
+          <h2 class="text-center">54,000</h2>
+          <p class="text-center">
+            <span class="outline-indicator text-muted">2.7% Increase</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sample-div gradiant-box" fxFlex="25%" fxFlexOrder.lt-md="4">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+        <div fxFlex="30%" class="text-center">
+          <i class="material-icons" style="font-size: 4.5em;">thumb_up</i>
+        </div>
+        <div fxFlex="70%" >
+          <h4 class="text-center">New Clients</h4>
+          <h2 class="text-center">54,000</h2>
+          <p class="text-center">
+            <span class="outline-indicator text-muted">2.7% Increase</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>
+<br>
+<mat-card>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+   <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" style="width: 100%; height: 400px; display: block;">
+   </highcharts-chart>
   </div>
 </mat-card>
 

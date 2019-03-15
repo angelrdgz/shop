@@ -2,9 +2,12 @@ mat-card{
   background: #fff;
   .gradiant-box{
       padding: 15px 5px;
-      background: #5C258D;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #74015d, #411e73);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #74015d, #411e73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #991d72;  /* fallback for old browsers */
+      color: #fff;
+
+      .text-muted{
+        color: rgb(222, 222, 222);
+      }
 
       div[class*="col-"]{
         border-left: 1px solid #ccc;
