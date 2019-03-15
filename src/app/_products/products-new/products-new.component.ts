@@ -15,7 +15,7 @@ export class ProductsNewComponent implements OnInit {
   checkNumber(event) {
     //this.value = this.value.replace(/[^0-9\.]/g,'');
     console.log(event.keyCode)
-      if ((event.keyCode != 46 || $(this).val().indexOf('.') != -1) && (event.keyCode < 48 || event.keyCode > 57)) {
+      if (event.keyCode != 46 && (event.keyCode < 48 || event.keyCode > 57)) {
           event.preventDefault();
       }
     /*if (event.key === "Enter") {
